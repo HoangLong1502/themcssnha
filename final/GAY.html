@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Shop</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class ="canon-page">
+    <nav>
+        <div class="logo">CAMERA</div>
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="GAY.html">Canon</a>
+            <a href="/">Contact</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-container">
+            <button>Buy now</button>
+            <ul>
+                <li>Heavy-more muscles</li>
+                <li>Sharp build-hardmind</li>
+                <li>Weather scare us</li>
+            </ul>
+            <div class="image-gallery">
+                <img src="https://dustinabbott.net/wp-content/gallery/canon-5d-mark-iv-product/Canon-5D4-Product-14.jpg" alt="camera 1">
+                <img src="https://th.bing.com/th/id/R.ec67f1402c505af16f44e636b6560ba3?rik=0Hhru%2bRUNnQQcQ&pid=ImgRaw&r=0" alt="camera 2">
+                <img src="https://www.teahub.io/photos/full/213-2137620_photo-wallpaper-the-camera-lens-canon-eos-1d.jpg" alt="camera 3">
+            </div>
+            <button id="backToTop" title="Back to Top">Back to Top</button>
+            <script>
+                let mybutton = document.getElementById("backToTop");
+                
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+                
+                mybutton.onclick = function() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+        </div>
+    </section>
+</body>
+</html>
